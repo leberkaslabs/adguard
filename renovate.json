@@ -1,0 +1,14 @@
+{
+    "automerge": true,
+    "dependencyDashboard": false,
+    "docker-compose": {
+        "enabled": true
+    },
+    "enabledManagers": [
+        "docker-compose"
+    ],
+    "extends": [
+        "config:base"
+    ],
+    "semanticCommits": true
+}

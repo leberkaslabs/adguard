@@ -1,0 +1,4 @@
+---
+repository:
+  description: AdGuard Docker Compose Deployment
+  topics: adguard, docker, docker-compose

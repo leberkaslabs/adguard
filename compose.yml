@@ -1,0 +1,15 @@
+---
+services:
+  adguard:
+    image: adguard/adguardhome:v0.107.62
+    container_name: adguard
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+    network_mode: host
+    volumes:
+      - ./docker-compose.d/conf:/opt/adguardhome/conf:rw
+      - ./docker-compose.d/work:/opt/adguardhome/work:rw

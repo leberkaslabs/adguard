@@ -1,0 +1,7 @@
+---
+services:
+  adguard:
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./docker-compose.d/conf:/opt/adguardhome/conf:rw
+      - ./docker-compose.d/work:/opt/adguardhome/work:rw
